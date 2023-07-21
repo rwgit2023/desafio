@@ -8,7 +8,13 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'desafio';
   anoAtual = new Date().getFullYear()
-  alerta(){
+  btn1(){
+    alert ('OIa eu aqui')
+  }
+  btn2(){
+    alert ('OIa eu aqui')
+  }
+  btn3(){
     alert ('OIa eu aqui')
   }
 }
