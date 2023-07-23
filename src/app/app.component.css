@@ -21,6 +21,7 @@ body {
   margin: 0 auto;
   background: #94a3b8;
   height: 100px;
+  height: 12vh;
 }
 
 .cabecalho .logo {
@@ -44,7 +45,7 @@ body {
   font-weight: bold;
   background-color: #184270;
   color: #ffffff;
-  font-size: 33px;
+  font-size: 28px;
   padding: 5px 20px;
   border-radius: 50px;
   transition: 0.3s;
@@ -52,38 +53,39 @@ body {
 }
 
 .cabecalho nav li a:hover {
-  color: #ffffff;
-  font-size: 37px;
-  background-color: #17a2b8;
+  color: #184270;
+  background-color: white;
+  border: 3px solid #184270;
+  transition: 1s;
 
 }
 
 /* ------------------------------------------------------------- */
 
-.principal{
+.principal {
   display: flex;
   justify-content: center;
   text-align: center;
   background-color: #ecf0f1;
-  height: 70vh;
+  height: 80vh;
   align-items: center;
-  
+
 
 }
 
-.container{
+.container {
   background-color: white;
   display: flex;
   border-radius: 15px;
   height: 80%;
-  width: 50%;
+  width: 960px;
   justify-content: space-between;
   align-items: center;
   position: relative;
 
 }
 
-.container::before{
+.container::before {
   content: "";
   position: absolute;
   background-color: #184270;
@@ -93,67 +95,126 @@ body {
 
 }
 
-h2{
-  font-size: 20px;
+.title {
+
+  font-size: 28px;
   font-weight: bold;
-  
 }
 
-.acesso{
+.descricao {
+  font-size: 14px;
+  font-weight: 300;
+  /* color: white; */
+  line-height: 30px;
+}
+
+.acesso {
   display: flex;
+  list-style-type: none;
+
 }
 
-.formulario{
+.formulario {
   display: flex;
   flex-direction: column;
-}
-button{
-  background-color: #007bff; /* Cor de fundo */
-  color: #fff; /* Cor do texto */
-  padding: 10px 20px; /* Espaçamento interno (topo/baixo esquerdo/direito) */
-  border: none; /* Remover a borda padrão */
-  border-radius: 5px; /* Cantos arredondados */
-  cursor: pointer; /* Mostrar o cursor de mão quando o mouse estiver sobre o botão */
+  width: 70%;
+  /* color: red; */
 }
 
-.primeiro-container{
+.formulario input {
+  height: 45px;
+  width: 100%;
+  border: none;
+  background-color: #ecf0f1;
+  margin-top: 5px;
+  border-radius: 10px;
+}
+
+
+
+/* .item-media a{
+  color: #95a5a6;
+}
+
+.item-media{
+  border: 1px solid #95a5a6;
+  border-radius: 50%; */
+/* } */
+
+
+button {
+  color: white;
+  border-radius: 15px;
+  /* Cantos arredondados */
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 10px;
+  padding: 10px 50px;
+  border: 1px solid white;
+  font-weight: bold;
+  margin-top: 20px;
+  width: 150px;
+  align-self: center;
+}
+
+.botao1:hover {
+  background-color: white;
+  color: #184270;
+  transition: 1s;
+
+}
+
+
+
+.botao2:hover {
+  background-color: white;
+  color: #184270;
+  transition: 1s;
+  border: 1px solid #184270;
+}
+
+.primeiro-container {
   display: flex;
 }
 
 
-.segundo-container{
+.segundo-container {
 
   position: absolute;
   display: none;
 }
 
-.primeira-coluna{
+.primeira-coluna {
   text-align: center;
-  flex: 1 0 auto;
+  width: 40%;
   z-index: 10;
 }
 
-.segunda-coluna{
-  text-align: center;
-  flex: 2 0 auto;
+.segunda-coluna {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 
 
 /* ------------------------------------------------------------- */
 footer {
-  height: 15vh;
+  height: 10vh;
   /* padding: 20px 0; */
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  
+
 }
 
 .rodape {
   font-size: 10px;
-  margin-top: 20px;
+  margin-top: 4vh;
+  text-align: center;
+  align-items: center;
 
 
 

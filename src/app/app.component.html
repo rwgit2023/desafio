@@ -11,35 +11,47 @@
 
 
 
-<main class="principal flex flex-row justify-center border border-solid border-8 p-4 ">
+<main class="principal flex flex-row justify-center p-4 ">
 
 	<div class="container primeiro-container ">
 
 		<div class="primeira-coluna">
-			<h2 class="title">Bem vindo</h2>
-			<p class="descricao">Para logar-se</p>
-			<p class="descricao">por favor entre com seus dados</p>
-			<button (click)="btn1()">Acessar</button>
+			<h2 class="title text-white">Bem vindo</h2>
+			<p class="descricao text-white">Para logar-se</p>
+			<p class="descricao text-white">por favor entre com seus dados</p>
+			<button class="botao1 bg-azul" (click)="btn1()">Acessar</button>
 		</div>
 
 		<div class="segunda-coluna">
-			<h2 class="title">Criar Conta</h2>
+			<h2 class="title text-azul">Criar Conta</h2>
 			<!-- formas de acesso -->
-			<div class="formas-cadastro">
+			<!-- <div class="formas-cadastro">
 				<ul class="acesso">
-					<li><a href="#">face</a></li>
-					<li><a href="#">google</a></li>
-					<li><a href="#">linkedin</a></li>
+					<a class="link-social-media" href="#">
+						<li class="item-media">
+							<i class="fab fa-facebook-f"></i>
+						</li>
+					</a>
+					<a class="link-social-media" href="#">
+						<li class="item-media">
+							<i class="fab fa-google-plus-g"></i>
+						</li>
+					</a>
+					<a class="link-social-media" href="#">
+						<li class="item-media">
+							<i class="fab fa-linkedin-in"></i>
+						</li>
+					</a>
 				</ul>
-			</div>
+			</div> -->
 
-			<p class="descricao">Cadastrar-se utilizando E-mail</p>
+			<!-- <p class="descricao text-azul">Cadastrar-se utilizando E-mail</p> -->
 
 			<form class="formulario">
-				<input type="text" placeholder="Digite seu nome">
-				<input type="email" placeholder="Digite seu E-mail">
-				<input type="password" placeholder="Senha">
-				<button (click)="btn2()">Cadastrar</button>
+				<input type="text" placeholder="   Nome">
+				<input type="email" placeholder="   E-mail">
+				<input type="password" placeholder="   Senha">
+				<button class="botao2 bg-azul" (click)="btn2()">Cadastrar</button>
 			</form>
 		</div>
 	</div>
@@ -48,28 +60,42 @@
 
 	<div class="container segundo-container">
 		<div class="primeira-coluna">
-			<h2 class="title">Olá</h2>
+			<h2 class="title text-white">Olá</h2>
 			<p class="descricao">Entre com seus dados pessoais</p>
 			<p class="descricao">e vamos lá!</p>
 			<button (click)="btn3();">Cadastrar</button>
 		</div>
 
 		<div class="segunda-coluna">
-			<h2 class="title">Bem vindo</h2>
+			<h2 class="title text-blue-500">Bem vindo</h2>
 			<!-- formas de acesso -->
-			<div class="formas-cadastro">
+			<!-- <div class="formas-cadastro">
+			
 				<ul class="acesso">
-					<li><a href="#">face</a></li>
-					<li><a href="#">google</a></li>
-					<li><a href="#">linkedin</a></li>
+					<a class="link-social-media" href="#">
+						<li class="item-media">
+							<i class="fa-brands fa-facebook"></i>
+						</li>
+					</a>
+					<a class="link-social-media" href="#">
+						<li class="item-media">
+							<i class="fab fa-google-plus-g"></i>
+						</li>
+					</a>
+					<a class="link-social-media" href="#">
+						<li class="item-media">
+							<i class="fab fa-linkedin-in"></i>
+						</li>
+					</a>
 				</ul>
-			</div>
+
+			</div> -->
 
 			<p class="descricao">Acessar por E-mail</p>
 
 			<form class="formulario">
-				<input type="email" placeholder="Digite seu E-mail">
-				<input type="password" placeholder="Senha">
+				<input type="email" placeholder="   E-mail">
+				<input type="password" placeholder="   Senha">
 				<a href="#">Esqueci minha senha</a>
 				<button class="btn">Acessar</button>
 
@@ -83,7 +109,7 @@
 
 
 <footer class="bg-[#0f172a] text-center">
-	<p class="rodape text-stone-50">&copy; Copyright Ronan Cassemiro - {{anoAtual}}
+	<p class="rodape text-white">&copy; Copyright Ronan Cassemiro - {{anoAtual}}
 
 
 	</p>
