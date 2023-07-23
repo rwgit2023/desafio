@@ -61,32 +61,94 @@ body {
 /* ------------------------------------------------------------- */
 
 .principal{
+  display: flex;
+  justify-content: center;
   text-align: center;
-  height: 75vh;
+  background-color: #ecf0f1;
+  height: 70vh;
+  align-items: center;
+  
+
 }
 
-.container-primeiro-container{
-  border: solid 5px red;
+.container{
+  background-color: white;
+  display: flex;
+  border-radius: 15px;
+  height: 80%;
+  width: 50%;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
 }
 
-.container-segundo-container{
+.container::before{
+  content: "";
+  position: absolute;
+  background-color: #184270;
+  width: 40%;
+  height: 100%;
+
+
+}
+
+h2{
+  font-size: 20px;
+  font-weight: bold;
+  
+}
+
+.acesso{
+  display: flex;
+}
+
+.formulario{
+  display: flex;
+  flex-direction: column;
+}
+button{
+  background-color: #007bff; /* Cor de fundo */
+  color: #fff; /* Cor do texto */
+  padding: 10px 20px; /* Espaçamento interno (topo/baixo esquerdo/direito) */
+  border: none; /* Remover a borda padrão */
+  border-radius: 5px; /* Cantos arredondados */
+  cursor: pointer; /* Mostrar o cursor de mão quando o mouse estiver sobre o botão */
+}
+
+.primeiro-container{
+  display: flex;
+}
+
+
+.segundo-container{
 
   position: absolute;
   display: none;
 }
 
+.primeira-coluna{
+  text-align: center;
+  flex: 1 0 auto;
+  z-index: 10;
+}
 
+.segunda-coluna{
+  text-align: center;
+  flex: 2 0 auto;
+}
 
 
 
 /* ------------------------------------------------------------- */
 footer {
-  height: 80px;
+  height: 15vh;
   /* padding: 20px 0; */
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
+  
 }
 
 .rodape {
