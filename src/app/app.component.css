@@ -28,7 +28,7 @@ body {
 
   height: 100%;
   margin: center;
-  padding: 5px 20px;
+  padding: 0px 20px;
 
 }
 
@@ -46,7 +46,7 @@ body {
   background-color: #184270;
   color: #ffffff;
   font-size: 28px;
-  padding: 5px 20px;
+  padding: 0px 20px;
   border-radius: 50px;
   transition: 0.3s;
 
@@ -91,6 +91,10 @@ body {
   background-color: #184270;
   width: 40%;
   height: 100%;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+
+  left: 0;
 
 
 }
@@ -99,6 +103,7 @@ body {
 
   font-size: 28px;
   font-weight: bold;
+  text-transform: capitalize;
 }
 
 .descricao {
@@ -175,12 +180,16 @@ button {
 
 .primeiro-container {
   display: flex;
+  /* position: absolute; */
+  
+  /* display: none; */
 }
 
 
 .segundo-container {
 
-  position: absolute;
+  /* position: absolute; */
+  display: flex;
   display: none;
 }
 
