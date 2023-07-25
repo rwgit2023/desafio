@@ -28,7 +28,7 @@ body {
 
   height: 100%;
   margin: center;
-  padding: 0px 20px;
+  padding: 5px 20px;
 
 }
 
@@ -46,7 +46,7 @@ body {
   background-color: #184270;
   color: #ffffff;
   font-size: 28px;
-  padding: 0px 20px;
+  padding: 5px 20px;
   border-radius: 50px;
   transition: 0.3s;
 
@@ -66,7 +66,7 @@ body {
   display: flex;
   justify-content: center;
   text-align: center;
-  background-color: #ecf0f1;
+  background-color: white;
   height: 80vh;
   align-items: center;
 
@@ -74,7 +74,7 @@ body {
 }
 
 .container {
-  background-color: white;
+  background-color: #dbdfe0;
   display: flex;
   border-radius: 15px;
   height: 80%;
@@ -94,20 +94,17 @@ body {
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
 
-  left: 0;
-
 
 }
 
 .title {
 
-  font-size: 28px;
+  font-size: 32px;
   font-weight: bold;
-  text-transform: capitalize;
 }
 
 .descricao {
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 300;
   /* color: white; */
   line-height: 30px;
@@ -130,7 +127,7 @@ body {
   height: 45px;
   width: 100%;
   border: none;
-  background-color: #ecf0f1;
+  background-color: whitesmoke;
   margin-top: 5px;
   border-radius: 10px;
 }
@@ -148,7 +145,7 @@ body {
 
 
 button {
-  color: white;
+  /* color: white; */
   border-radius: 15px;
   /* Cantos arredondados */
   cursor: pointer;
@@ -168,7 +165,18 @@ button {
   transition: 1s;
 
 }
+.botao4:hover {
+  background-color: white;
+  color: #184270;
+  transition: 1s;
+  border: 1px solid #184270;
 
+}
+
+.underline{
+  margin-top: 5px;
+  font-size: 14px;
+}
 
 
 .botao2:hover {
@@ -178,21 +186,27 @@ button {
   border: 1px solid #184270;
 }
 
+.botao3:hover {
+  background-color: white;
+  color: #184270;
+  transition: 1s;
+  border: 1px solid #184270;
+}
+
 .primeiro-container {
   display: flex;
-  /* position: absolute; */
-  
   /* display: none; */
 }
 
 
 .segundo-container {
-
-  /* position: absolute; */
   display: flex;
-  display: none;
-}
+  height: 65%;
+  width: 960px;
+  position: absolute;
+  display: none; 
 
+}
 .primeira-coluna {
   text-align: center;
   width: 40%;
@@ -210,9 +224,9 @@ button {
 
 /* ------------------------------------------------------------- */
 footer {
-  height: 10vh;
+  height: 4vh;
   /* padding: 20px 0; */
-  position: absolute;
+  /* position: absolute; */
   bottom: 0;
   left: 0;
   width: 100%;
@@ -220,10 +234,11 @@ footer {
 }
 
 .rodape {
-  font-size: 10px;
+  font-size: 14px;
   margin-top: 4vh;
   text-align: center;
-  align-items: center;
+  /* align-items: center; */
+  padding-top: 1vh;
 
 
 
