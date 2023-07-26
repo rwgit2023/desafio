@@ -1,0 +1,20 @@
+footer {
+    height: 4vh;
+    /* padding: 20px 0; */
+    /* position: absolute; */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+ 
+  }
+ 
+  .rodape {
+    font-size: 14px;
+    margin-top: 4vh;
+    text-align: center;
+    /* align-items: center; */
+    padding-top: 1vh;
+ 
+ 
+ 
+  }

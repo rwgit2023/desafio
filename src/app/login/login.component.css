@@ -1,0 +1,171 @@
+ /* ------------------------------------------------------------- */
+
+ .principal {
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   background-color: white;
+   height: 80vh;
+   align-items: center;
+
+
+ }
+
+ .container {
+   background-color: #dbdfe0;
+   display: flex;
+   border-radius: 15px;
+   height: 80%;
+   width: 960px;
+   justify-content: space-between;
+   align-items: center;
+   position: relative;
+
+ }
+
+ .container::before {
+   content: "";
+   position: absolute;
+   background-color: #184270;
+   width: 40%;
+   height: 100%;
+   border-top-left-radius: 15px;
+   border-bottom-left-radius: 15px;
+
+
+ }
+
+ .title {
+
+   font-size: 32px;
+   font-weight: bold;
+ }
+
+ .descricao {
+   font-size: 17px;
+   font-weight: 300;
+   /* color: white; */
+   line-height: 30px;
+ }
+
+ .acesso {
+   display: flex;
+   list-style-type: none;
+
+ }
+
+ .formulario {
+   display: flex;
+   flex-direction: column;
+   width: 70%;
+   /* color: red; */
+ }
+
+ .formulario input {
+   height: 45px;
+   width: 100%;
+   border: none;
+   background-color: whitesmoke;
+   margin-top: 5px;
+   border-radius: 10px;
+ }
+
+
+
+ /* .item-media a{
+    color: #95a5a6;
+  }
+  
+  .item-media{
+    border: 1px solid #95a5a6;
+    border-radius: 50%; */
+ /* } */
+
+
+ button {
+   /* color: white; */
+   border-radius: 15px;
+   /* Cantos arredondados */
+   cursor: pointer;
+   text-transform: uppercase;
+   font-size: 10px;
+   padding: 10px 50px;
+   border: 1px solid white;
+   font-weight: bold;
+   margin-top: 20px;
+   width: 150px;
+   align-self: center;
+ }
+
+ .botao1:hover {
+   background-color: white;
+   color: #184270;
+   transition: 1s;
+
+ }
+
+ .botao4:hover {
+   background-color: white;
+   color: #184270;
+   transition: 1s;
+   border: 1px solid #184270;
+
+ }
+
+ .underline {
+   margin-top: 5px;
+   font-size: 14px;
+ }
+
+
+ .botao2:hover {
+   background-color: white;
+   color: #184270;
+   transition: 1s;
+   border: 1px solid #184270;
+ }
+
+ .botao3:hover {
+   background-color: white;
+   color: #184270;
+   transition: 1s;
+   border: 1px solid #184270;
+ }
+
+ .primeiro-container {
+   display: none;
+ }
+
+
+ .segundo-container {
+   display: flex;
+   height: 65%;
+   width: 960px;
+   position: absolute;
+   display: flex;
+
+ }
+
+ .primeira-coluna {
+   text-align: center;
+   width: 40%;
+   z-index: 10;
+ }
+
+ .segunda-coluna {
+   width: 60%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+
+
+ .aberto {
+   display: flex;
+ }
+
+ .fechado {
+   display: none;
+ }
+
+ /* ------------------------------------------------------------- */

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef  } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,24 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'desafio';
-  anoAtual = new Date().getFullYear()
-  btn1(){
-    alert ('OIa eu aqui')
-    // Aqui irá chamar a tela de Home
-  }
-  btn2(){
-    alert ('OIa eu aqui')
-    // Aqui irá chamar a div de Cadastro
-    
-  }
-  btn3(){
-    alert ('OIa eu aqui')
-    // Aqui irá cadastrar
-
-  }
-  btn4(){
-    alert ('OIa eu aqui')
-    // Aqui irá chamar a div de Acesso
-  }
+ 
 }

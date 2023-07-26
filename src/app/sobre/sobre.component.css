@@ -1,0 +1,10 @@
+h1{
+    color: #000;
+    font-size: 25pt;
+}
+
+#footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
