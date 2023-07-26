@@ -1,7 +1,32 @@
-h1{
-    color: #000;
-    font-size: 25pt;
-}
+.container_main{
+    width: 400px;
+    height: 350px;
+    margin: 5% auto;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 10px;
+    opacity: 1;
+    transition: 400ms;
+    box-shadow: 15px 15px 7px 7px black;
+    justify-content: center;
+    
+  }
+  
+  .container_main h1{
+    padding: 10px 0 20px 0 ;
+    font-size: 25px;
+    
+  }
+  
+  .container_main p{
+    margin: 0 0.5em 0.5em 0.5em;
+    font-size: 15px;
+    text-align: left;
+  }
+
+
+
 
 #footer{
     position: absolute;
