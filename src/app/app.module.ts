@@ -10,7 +10,11 @@ import { LoginComponent } from './login/login.component';
 import { NavComponent } from './nav/nav.component';
 import { FooterComponent } from './footer/footer.component'
 
-// import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { TintasService } from './services/tintas.service';
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
+
+
 
 
 
@@ -27,6 +31,8 @@ import { FooterComponent } from './footer/footer.component'
     BrowserModule,
     AppRoutingModule, // CLI adds AppRoutingModule to the AppModule's imports arraytingModule
     // FontAwesomeModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

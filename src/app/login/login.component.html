@@ -82,9 +82,9 @@
 
 			<p class="descricao">Acessar por E-mail</p>
 
-			<form class="formulario">
-				<input type="email" placeholder="   E-mail">
-				<input type="password" placeholder="   Senha">
+			<form  [formGroup] = 'loginform'  class="formulario">
+				<input formControlName = 'email' type="email" placeholder="   E-mail">
+				<input formControlName = 'senha' type="password" placeholder="   Senha">
 				<a class="underline" href="#">Esqueci minha senha</a>
 				<button class="botao4 bg-azul text-white" (click)="login()">Acessar</button>
 

@@ -1,4 +1,8 @@
 import { Component } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
+import { AutenticacaoService } from '../services/autenticacao.service';
+import { Usuario } from '../models/usuario-model';
+import { __values } from 'tslib';
 
 @Component({
   selector: 'app-login',
@@ -8,13 +12,27 @@ import { Component } from '@angular/core';
 export class LoginComponent {
   title = 'desafio';
 
+  loginform = new FormGroup ({
 
-  // primeira = document.querySelector(".primeiro-container");
-  // segunda = document.querySelector(".segundo-container");
+    email : new FormControl(''),
+    senha : new FormControl(''),
 
+  });
+
+  constructor(private autenticacaoService : AutenticacaoService){
+
+
+
+  }
   login() {
 
+    let usuario : Usuario = {};
+    usuario.email = this.loginform.get('email')?.value!;
+    usuario.password = this.loginform.get('senha')?.value!;
 
+    this.autenticacaoService.login(usuario)?.subscribe((value) =>{
+      console.log(value)
+    })
 
   }
 
