@@ -9,9 +9,12 @@ import { __values } from 'tslib';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
+
+  
 export class LoginComponent {
   title = 'desafio';
 
+    
   loginform = new FormGroup ({
 
     email : new FormControl(''),
@@ -23,6 +26,8 @@ export class LoginComponent {
 
 
 
+    // ------------------------------------------------------------LOGIN------------------------------------------------------------
+
   }
   login() {
 
@@ -32,10 +37,15 @@ export class LoginComponent {
 
     this.autenticacaoService.login(usuario)?.subscribe((value) =>{
       console.log(value)
+
+      localStorage.setItem('user',JSON.stringify(value))
+      
+      
+      
     })
 
   }
-
+  
   goToSignUp() {
     // Aqui irá chamar a div de Cadastro
     const primeira = document.getElementById("primeira");
@@ -47,11 +57,17 @@ export class LoginComponent {
     segunda!.className = 'fechado' // container segundo-container -> fechado
   }
 
+
+     // ------------------------------------------------------------CADASTRO------------------------------------------------------------
   signUp() {
 
-
+    let usuario : Usuario = {};
+    usuario.email = this.loginform.get('email')?.value!;
+    usuario.password = this.loginform.get('senha')?.value!;
 
   }
+
+
   goToLogin() {
     // Aqui irá chamar a div de Cadastro
     const primeira = document.getElementById("primeira");

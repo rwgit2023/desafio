@@ -15,10 +15,17 @@ export class AutenticacaoService {
 
 
   // API / ROTA
-  login(usuario:Usuario):Observable<any>|null{   
-
-    
+  login(usuario:Usuario):Observable<any>|null{  
 
     return this.http.post(Constantes.RotasHttp.LOGIN,usuario);
+
+  }
+
+
+
+  cadastro(usuario:Usuario):Observable<any>|null{  
+    return this.http.post(Constantes.RotasHttp.LOGIN,usuario);
+    
   }
 }
+
