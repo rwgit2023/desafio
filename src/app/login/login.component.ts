@@ -1,8 +1,26 @@
+// CADASTRO
+
+// {
+//   "email": "eve.holt@reqres.in",
+//   "password": "pistol"
+// }
+
+// LOGIN
+// {
+//   "email": "eve.holt@reqres.in",
+//   "password": "cityslicka"
+// }
+
+
+
+
 import { Component } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { AutenticacaoService } from '../services/autenticacao.service';
 import { Usuario } from '../models/usuario-model';
 import { __values } from 'tslib';
+
+import { NavigationService } from '../services/navigation.service';
 
 @Component({
   selector: 'app-login',
@@ -22,11 +40,18 @@ export class LoginComponent {
 
   });
 
-  constructor(private autenticacaoService : AutenticacaoService){
 
+  cadastroform = new FormGroup ({
 
+    nome : new FormControl(''),
+    email : new FormControl(''),
+    senha : new FormControl(''),
 
-    // ------------------------------------------------------------LOGIN------------------------------------------------------------
+  });
+
+      // ------------------------------------------------------------LOGIN------------------------------------------------------------
+  constructor(private autenticacaoService : AutenticacaoService, private navigationService: NavigationService){
+
 
   }
   login() {
@@ -39,9 +64,9 @@ export class LoginComponent {
       console.log(value)
 
       localStorage.setItem('user',JSON.stringify(value))
-      
-      
-      
+
+      this.navigationService.goToHome();
+            
     })
 
   }
@@ -59,11 +84,24 @@ export class LoginComponent {
 
 
      // ------------------------------------------------------------CADASTRO------------------------------------------------------------
+
   signUp() {
 
     let usuario : Usuario = {};
-    usuario.email = this.loginform.get('email')?.value!;
-    usuario.password = this.loginform.get('senha')?.value!;
+    usuario.nome = this.cadastroform.get('nome')?.value!;
+    usuario.email = this.cadastroform.get('email')?.value!;
+    usuario.password = this.cadastroform.get('senha')?.value!;
+
+    console.log('cliquei')
+
+    this.autenticacaoService.cadastro(usuario)?.subscribe((value) =>{
+      console.log(value)
+
+      localStorage.setItem('user',JSON.parse(JSON.stringify(value)).token)
+
+      window.location.reload();
+            
+    })
 
   }
 

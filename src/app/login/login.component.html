@@ -36,11 +36,12 @@
 
 			<!-- <p class="descricao text-azul">Cadastrar-se utilizando E-mail</p> -->
 
-			<form class="formulario">
-				<input type="text" placeholder="   Nome">
-				<input type="email" placeholder="   E-mail">
-				<input type="password" placeholder="   Senha">
-				<button class="botao2 bg-azul text-white" (click)="signUp">Cadastrar</button>
+			
+			<form [formGroup] = 'cadastroform'  class="formulario">
+				<input formControlName = 'nome' type="text" placeholder="   Nome">
+				<input formControlName = 'email' type="email" placeholder="   E-mail">
+				<input formControlName = 'senha' type="password" placeholder="   Senha">
+				<button class="botao2 bg-azul text-white" (click)="signUp()">Cadastrar</button>
 			</form>
 		</div>
 	</div>
