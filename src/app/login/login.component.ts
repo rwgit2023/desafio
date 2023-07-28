@@ -61,7 +61,7 @@ export class LoginComponent {
     usuario.password = this.loginform.get('senha')?.value!;
 
     this.autenticacaoService.login(usuario)?.subscribe((value) =>{
-      console.log(value)
+      // console.log(value)
 
       localStorage.setItem('user',JSON.stringify(value))
 
@@ -76,8 +76,6 @@ export class LoginComponent {
     const primeira = document.getElementById("primeira");
     const segunda = document.getElementById("segunda");
 
-    console.log(primeira)
-
     primeira!.className = 'container segundo-container aberto'
     segunda!.className = 'fechado' // container segundo-container -> fechado
   }
@@ -90,17 +88,22 @@ export class LoginComponent {
     let usuario : Usuario = {};
     usuario.nome = this.cadastroform.get('nome')?.value!;
     usuario.email = this.cadastroform.get('email')?.value!;
-    usuario.password = this.cadastroform.get('senha')?.value!;
-
-    console.log('cliquei')
+    usuario.password = this.cadastroform.get('senha')?.value!
 
     this.autenticacaoService.cadastro(usuario)?.subscribe((value) =>{
-      console.log(value)
+      // console.log(value)
 
       localStorage.setItem('user',JSON.parse(JSON.stringify(value)).token)
 
       window.location.reload();
-            
+
+      const objeto = JSON.parse(value);
+
+
+      
+      console.log(objeto.name);
+      console.log(objeto.year);
+
     })
 
   }
@@ -111,7 +114,6 @@ export class LoginComponent {
     const primeira = document.getElementById("primeira");
     const segunda = document.getElementById("segunda");
 
-    console.log(primeira)
 
     primeira!.className = 'fechado';
     segunda!.className = 'container segundo-container';
