@@ -1,21 +1,35 @@
+main{
+  background-color: white;
+  height: 84vh;
+  display: flex;
+  overflow: hidden;
+}
+
 .container_main{
     width: 400px;
-    height: 350px;
-    margin: 5% auto;
+    height: 400px;
+    margin: auto auto;
+  
+
     text-align: center;
     box-sizing: border-box;
     border: 1px solid black;
     border-radius: 10px;
-    opacity: 1;
+    /* opacity: 1; */
     transition: 400ms;
     box-shadow: 15px 15px 7px 7px black;
     justify-content: center;
+    background-color: white;
     
+
+
   }
   
   .container_main h1{
     padding: 10px 0 20px 0 ;
     font-size: 25px;
+    color: black;
+    font-weight: bold;
     
   }
   
@@ -23,6 +37,8 @@
     margin: 0 0.5em 0.5em 0.5em;
     font-size: 15px;
     text-align: left;
+    color: black;
+    
   }
 
 

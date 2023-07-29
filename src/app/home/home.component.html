@@ -1,10 +1,25 @@
 <app-nav></app-nav>
 
-<!-- FOREACH -->
-<div class="rol" *ngFor = 'let tinta of listaTintas '>
-  <app-tintas-front class="cor" cor = '{{tinta.color}}' nome = '{{tinta.name}}' id="{{tinta.id}}" palheta = '{{tinta.pantone_value}}'>
 
-  </app-tintas-front>
+<main>
+
+
+<div>
+
 </div>
+    <div class="rol card  w-150 bg-base-100 shadow-xl" *ngFor='let tinta of listaTintas '>
+      <app-tintas-front  cor='{{tinta.color}}' nome='{{tinta.name}}' id="{{tinta.id}} "
+        palheta='{{tinta.pantone_value}}'>
+
+      </app-tintas-front>
+    </div>
+
+  <!-- FOREACH -->
+
+
+
+</main>
 
 <app-footer id="footer"></app-footer>
+
+

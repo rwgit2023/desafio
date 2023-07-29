@@ -1,5 +1,10 @@
+main{
+  background-color: whi;
+  height: 79.8vh;
+  display: flex;
+}
+
 #footer{
-  /* position: absolute; */
   bottom: 0;
   width: 100%;
   width: 960px;
@@ -9,12 +14,15 @@
 .rol{
   /* display: flex; */
   display: inline-block;
-  padding: 40px 6%;
-  font-size: larger;
-  font-size: 20px;
+  margin: auto;
   font-weight: bold;
-  color: rgb(75, 73, 73);
+  font-size: 25px;
+  font-weight: bold;
+  color: black;
   max-width: 960px;
+  max-height: auto;
+  
+  
 
   align-items: center;
 
@@ -22,7 +30,3 @@
   
 }
 
-/* .cor{
-  height: 50%;
-  width: 10vh;
-} */
