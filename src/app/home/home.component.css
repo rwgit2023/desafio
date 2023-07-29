@@ -1,5 +1,28 @@
 #footer{
-  position: absolute;
+  /* position: absolute; */
   bottom: 0;
   width: 100%;
+  width: 960px;
+  
 }
+
+.rol{
+  /* display: flex; */
+  display: inline-block;
+  padding: 40px 6%;
+  font-size: larger;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(75, 73, 73);
+  max-width: 960px;
+
+  align-items: center;
+
+  
+  
+}
+
+/* .cor{
+  height: 50%;
+  width: 10vh;
+} */

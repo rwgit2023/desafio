@@ -1,13 +1,10 @@
 <app-nav></app-nav>
 
-<main>
+<!-- FOREACH -->
+<div class="rol" *ngFor = 'let tinta of listaTintas '>
+  <app-tintas-front class="cor" cor = '{{tinta.color}}' nome = '{{tinta.name}}' id="{{tinta.id}}" palheta = '{{tinta.pantone_value}}'>
 
-<h1>MULTICOLORIDOS HOMENS - AÇÃO - COM SERGINHO GROSIAMAN - GLOBO</h1>
-    
-</main>
-
-
-
-
+  </app-tintas-front>
+</div>
 
 <app-footer id="footer"></app-footer>

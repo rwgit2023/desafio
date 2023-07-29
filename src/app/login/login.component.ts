@@ -63,7 +63,7 @@ export class LoginComponent {
     this.autenticacaoService.login(usuario)?.subscribe((value) =>{
       // console.log(value)
 
-      localStorage.setItem('user',JSON.stringify(value))
+      localStorage.setItem('user',(value).token)
 
       this.navigationService.goToHome();
             
@@ -93,16 +93,9 @@ export class LoginComponent {
     this.autenticacaoService.cadastro(usuario)?.subscribe((value) =>{
       // console.log(value)
 
-      localStorage.setItem('user',JSON.parse(JSON.stringify(value)).token)
+      localStorage.setItem('user',(value).token)
 
       window.location.reload();
-
-      const objeto = JSON.parse(value);
-
-
-      
-      console.log(objeto.name);
-      console.log(objeto.year);
 
     })
 

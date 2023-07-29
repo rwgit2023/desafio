@@ -17,6 +17,9 @@ module.exports = {
       'azul': '#184270', 
     },
   },
-  plugins: [],
+  // configurando o daisy
+  plugins: [
+    require('daisyui')
+  ],
 }
 
